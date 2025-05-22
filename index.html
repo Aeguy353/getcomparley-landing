@@ -1,90 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GetComparley | Compare Smarter, Shop Better</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      text-align: center;
-      color: #333;
-    }
-    .container {
-      padding: 100px 20px;
-    }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 40px;
-    }
-    .email-signup input[type="email"] {
-      padding: 10px;
-      font-size: 1rem;
-      width: 250px;
-    }
-    .email-signup button {
-      padding: 10px 20px;
-      font-size: 1rem;
-      background: #0077cc;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      margin-top: 100px;
-      font-size: 0.9rem;
-      color: #777;
-    }
-    .section {
-      max-width: 900px;
-      margin: 50px auto;
-      text-align: left;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .section h2 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-    }
-    .section ul {
-      margin-left: 20px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compare DEWALT Drills | GetComparley</title>
+  <script type="module" crossorigin src="/main.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
-<body>
-  <div class="container">
-    <h1>GetComparley</h1>
-    <p>Compare smarter. Shop better. Your personalized product comparison engine is coming soon.</p>
-
-    <div class="email-signup">
-      <input type="email" placeholder="Enter your email" />
-      <button>Notify Me</button>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>Related Brands Under DEWALT’s Parent Company</h2>
-    <p>DEWALT is part of <strong>Stanley Black & Decker</strong>, a global tool manufacturer that also owns several well-known brands. While DEWALT tools are not rebranded under other names, these related brands share similar designs, manufacturing roots, or target different users:</p>
-    <ul>
-      <li><strong>BLACK+DECKER</strong> – Affordable, light-duty tools for homeowners.</li>
-      <li><strong>Craftsman</strong> – Mid-range DIY tools, some powered by similar 20V platforms.</li>
-      <li><strong>Porter-Cable</strong> – Phasing out, but formerly offered budget pro-grade tools.</li>
-      <li><strong>Stanley</strong> – Known for hand tools, not power drills.</li>
-    </ul>
-    <p>These brands cater to various users — from casual DIYers to pros — but DEWALT remains their premium performance line.</p>
-  </div>
-
-  <footer>
-    &copy; 2025 GetComparley. All rights reserved.
-  </footer>
+<body class="bg-gray-100">
+  <div id="root"></div>
+  <script type="module">
+    import ComparePage from './main.js';
+    const root = document.getElementById('root');
+    root.innerHTML = '';
+    document.body.appendChild(ComparePage());
+  </script>
 </body>
 </html>
