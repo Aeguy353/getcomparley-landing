@@ -15,26 +15,22 @@
       align-items: center;
       padding: 60px 20px;
     }
-
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-
     p {
       font-size: 1.2rem;
       margin-bottom: 30px;
       max-width: 600px;
       text-align: center;
     }
-
     .email-signup {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 12px;
     }
-
     input[type="email"] {
       padding: 10px;
       font-size: 1rem;
@@ -42,7 +38,6 @@
       border: 1px solid #ccc;
       border-radius: 6px;
     }
-
     button {
       padding: 12px 24px;
       background-color: #0077cc;
@@ -52,26 +47,31 @@
       font-size: 1rem;
       cursor: pointer;
     }
-
     button:hover {
       background-color: #005fa3;
     }
-
     footer {
       margin-top: 60px;
       font-size: 0.9rem;
       color: #888;
     }
+    .nav-link {
+      margin-top: 40px;
+      font-size: 1.1rem;
+    }
   </style>
 </head>
 <body>
   <h1>Welcome to GetComparley</h1>
-  <p>The smart way to compare products across Amazon, Walmart, Lowe's, Target, and more.  
-     Discover real-time prices, ratings, and deals — no more buyer’s remorse.</p>
+  <p>The smart way to compare products across Amazon, Walmart, Lowe's, Target, Home Depot, and Wayfair.</p>
 
-  <div class="email-signup">
-    <input type="email" placeholder="Enter your email to stay updated" />
-    <button>Notify Me</button>
+  <form class="email-signup" action="https://formspree.io/f/mnndkjkn" method="POST">
+    <input type="email" name="email" placeholder="Enter your email to stay updated" required />
+    <button type="submit">Notify Me</button>
+  </form>
+
+  <div class="nav-link">
+    <a href="compare.html">See Product Comparison</a>
   </div>
 
   <footer>&copy; 2025 GetComparley. All rights reserved.</footer>
