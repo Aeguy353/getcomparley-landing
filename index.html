@@ -1,34 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetComparley - Smart Product Comparison</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetComparley Contact Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>GetComparley</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="search.html">Search</a>
-      <a href="results.html">Results</a>
-    </nav>
-  </header>
-  <main>
-    <h2>We Delete Buyer's Remorse</h2>
-    <p>Compare products instantly across Amazon, Walmart, Lowe’s, Target, and more.</p>
-    <a href="search.html" class="btn">Start Comparing</a>
-  </main>
-  <footer>
-    <form action="https://formspree.io/f/mwkgenvl" method="POST">
-      <label>Email:
-        <input type="email" name="email" required />
-      </label>
-      <button type="submit">Join Beta List</button>
-    </form>
-    <p>&copy; 2025 GetComparley</p>
-  </footer>
+    <header class="logo-header">
+        <img src="logo.png" alt="Comparley Logo">
+    </header>
+
+    <section class="form-section">
+        <h1>Contact Us</h1>
+        <form action="https://formspree.io/f/mjkwnykw" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 </body>
 </html>

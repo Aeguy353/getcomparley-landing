@@ -1,41 +1,57 @@
 body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
 }
-header, footer {
-  background: #111;
-  color: white;
-  padding: 1em;
-  text-align: center;
+
+.form-section {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-nav a {
-  margin: 0 1em;
-  color: #0af;
-  text-decoration: none;
+
+h1 {
+    text-align: center;
+    color: #333;
 }
-main {
-  padding: 2em;
-  text-align: center;
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
 }
-.btn {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1.5em;
-  background: #0af;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
-.results-grid {
-  display: flex;
-  justify-content: center;
-  gap: 2em;
+
+button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
-.product-card {
-  border: 1px solid #ccc;
-  background: white;
-  padding: 1em;
-  width: 200px;
+
+button:hover {
+    background-color: #005f99;
+}
+
+.logo-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.logo-header img {
+    max-width: 200px;
+    height: auto;
 }
