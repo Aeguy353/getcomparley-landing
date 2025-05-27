@@ -1,19 +1,43 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GetComparley</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparley – Smart Product Comparison</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>GetComparley - Smart Product Comparison</h1>
-    <input type="text" id="searchInput" placeholder="Search for a product...">
-    <button onclick="performSearch()">Search</button>
-    <div id="results"></div>
-    <footer>
-        <p>&copy; 2025 GetComparley</p>
-    </footer>
-    <script src="script.js"></script>
+    <header class="logo-header">
+        <img src="logo.png" alt="Comparley Logo">
+        <h2 class="tagline">Deleting Buyer's Remorse</h2>
+    </header>
+
+    <section class="description">
+        <p>
+            Comparley is a smart product comparison platform that helps shoppers find the best deals across Amazon, Walmart, Target, Lowe’s, Home Depot, and more. 
+            By showcasing real-time pricing, specs, and trusted retailer info, we help users shop smarter — online and locally.
+        </p>
+    </section>
+
+    <section class="search-section">
+        <h3>Search for a Product</h3>
+        <form class="search-form">
+            <input type="text" placeholder="Search products, brands, or categories..." required>
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+    <section class="form-section">
+        <h3>Sign Up for Updates</h3>
+        <form action="https://formspree.io/f/mjkwnykw" method="POST">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
 </body>
 </html>
