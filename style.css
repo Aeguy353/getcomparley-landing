@@ -114,3 +114,22 @@ button[type="submit"]:hover {
     font-size: 0.9rem;
     margin-top: 50px;
 }
+
+.search-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.search-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007acc;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.search-button:hover {
+    background-color: #005f99;
+}
