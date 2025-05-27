@@ -1,0 +1,41 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+header, footer {
+  background: #111;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+nav a {
+  margin: 0 1em;
+  color: #0af;
+  text-decoration: none;
+}
+main {
+  padding: 2em;
+  text-align: center;
+}
+.btn {
+  display: inline-block;
+  margin-top: 1em;
+  padding: 0.5em 1.5em;
+  background: #0af;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.results-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+.product-card {
+  border: 1px solid #ccc;
+  background: white;
+  padding: 1em;
+  width: 200px;
+}

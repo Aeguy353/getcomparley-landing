@@ -3,92 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetComparley | Smart Product Comparison</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f4f6f8;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 60px 20px;
-      transition: background 0.3s;
-    }
-    h1, p, .email-signup, .nav-link {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-    h1 { animation-delay: 0.2s; }
-    p { animation-delay: 0.4s; }
-    .email-signup { animation-delay: 0.6s; }
-    .nav-link { animation-delay: 0.8s; }
-
-    @keyframes fadeInUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-      max-width: 600px;
-      text-align: center;
-    }
-    .email-signup {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-    }
-    input[type="email"] {
-      padding: 10px;
-      font-size: 1rem;
-      width: 260px;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-    }
-    button {
-      padding: 12px 24px;
-      background-color: #0077cc;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-    button:hover {
-      background-color: #005fa3;
-    }
-    .nav-link {
-      margin-top: 40px;
-      font-size: 1.1rem;
-    }
-    footer {
-      margin-top: 60px;
-      font-size: 0.9rem;
-      color: #888;
-    }
-  </style>
+  <title>GetComparley - Smart Product Comparison</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <h1>Welcome to GetComparley</h1>
-  <p>The smart way to compare products across Amazon, Walmart, Lowe's, Target, Home Depot, and Wayfair.</p>
-
-  <form class="email-signup" action="https://formspree.io/f/mnndkjkn" method="POST">
-    <input type="email" name="email" placeholder="Enter your email to stay updated" required />
-    <button type="submit">Notify Me</button>
-  </form>
-
-  <div class="nav-link">
-    <a href="search.html">Go to Smart Comparison Search</a>
-  </div>
-
-  <footer>&copy; 2025 GetComparley. All rights reserved.</footer>
+  <header>
+    <h1>GetComparley</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="search.html">Search</a>
+      <a href="results.html">Results</a>
+    </nav>
+  </header>
+  <main>
+    <h2>We Delete Buyer's Remorse</h2>
+    <p>Compare products instantly across Amazon, Walmart, Lowe’s, Target, and more.</p>
+    <a href="search.html" class="btn">Start Comparing</a>
+  </main>
+  <footer>
+    <form action="https://formspree.io/f/mwkgenvl" method="POST">
+      <label>Email:
+        <input type="email" name="email" required />
+      </label>
+      <button type="submit">Join Beta List</button>
+    </form>
+    <p>&copy; 2025 GetComparley</p>
+  </footer>
 </body>
 </html>
