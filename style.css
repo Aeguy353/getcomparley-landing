@@ -190,3 +190,23 @@ button[type="submit"]:hover {
     margin-top: 20px;
     text-align: center;
 }
+
+.intro, .highlights, .assets, .contact {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.highlights ul, .assets ul {
+    list-style: none;
+    padding: 0;
+}
+
+.highlights li, .assets li {
+    margin: 10px 0;
+}
+
+h1, h2, h3 {
+    color: #007acc;
+}
