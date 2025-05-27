@@ -185,3 +185,8 @@ button[type="submit"]:hover {
 .product-card button:hover {
     background-color: #005f99;
 }
+
+.search-bar-section {
+    margin-top: 20px;
+    text-align: center;
+}
