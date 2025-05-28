@@ -1,47 +1,92 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GetComparley</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetComparley - Deleting Buyer's Remorse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            padding: 20px;
+            background: #444;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        main {
+            background: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+        }
+        footer {
+            background: #444;
+            color: white;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        select, input[type="text"] {
+            margin: 10px;
+            padding: 10px;
+            width: 80%;
+        }
+        .category-link {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .category-link:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="GetComparley Logo" id="logo" />
-    <h1>Welcome to GetComparley</h1>
-    <p>Veteran-Owned • Deleting Buyer's Remorse</p>
-  </header>
-  <main>
-    <section class="search-box">
-      <input type="text" id="searchInput" placeholder="Search a product..." />
-      <div id="store-selects">
-        <select><option>Select Store</option></select>
-        <select><option>Select Store</option></select>
-        <select><option>Select Store</option></select>
-        <select><option>Select Store</option></select>
-        <select><option>Select Store</option></select>
-        <select><option>Select Store</option></select>
-      </div>
-      <button id="compareBtn">Compare</button>
-      <button id="trustBtn">Trust GetComparley to choose stores</button>
-    </section>
-    <section class="categories">
-      <h2>Shop by Category</h2>
-      <ul>
-        <li><a href="categories/tools.html">Tools</a></li>
-        <li><a href="categories/furniture.html">Furniture</a></li>
-        <li><a href="categories/bedbath.html">Bed & Bath</a></li>
-        <li><a href="categories/toys.html">Toys</a></li>
-        <li><a href="categories/jewelry.html">Jewelry</a></li>
-        <li><a href="categories/sports.html">Sports</a></li>
-      </ul>
-    </section>
-  </main>
-  <footer>
-    <p>This is a veteran-owned site. We may earn commissions through affiliate links. More stores are being added daily.</p>
-    <p>&copy; 2025 GetComparley</p>
-  </footer>
-  <script src="js/scripts.js"></script>
+    <header>
+        <h1>GetComparley</h1>
+        <p>Deleting Buyer's Remorse</p>
+    </header>
+    <main>
+        <h2>Select up to 6 Stores or Trust Us to Compare for You</h2>
+        <div id="store-selectors">
+            <select><option>Select Store</option></select>
+            <select><option>Select Store</option></select>
+            <select><option>Select Store</option></select>
+            <select><option>Select Store</option></select>
+            <select><option>Select Store</option></select>
+            <select><option>Select Store</option></select>
+        </div>
+        <input type="text" placeholder="Search for a product..." />
+        <p>or</p>
+        <button onclick="alert('We will find the best prices for you.')">Trust Us</button>
+        <h3>Categories</h3>
+        <a href="#" class="category-link">Tools</a>
+        <a href="#" class="category-link">Furniture</a>
+        <a href="#" class="category-link">Bed & Bath</a>
+        <a href="#" class="category-link">Toys</a>
+        <a href="#" class="category-link">Jewelry</a>
+        <a href="#" class="category-link">Sports</a>
+    </main>
+    <footer>
+        <p>More stores being added daily | Veteran Owned | FTC Disclosure: This site uses affiliate links</p>
+    </footer>
 </body>
 </html>
