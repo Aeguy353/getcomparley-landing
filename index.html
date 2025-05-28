@@ -1,96 +1,32 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GetComparley</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f4f4f4;
-      color: #333;
-    }
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 20px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      border-radius: 8px;
-    }
-    header, footer {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    h1 {
-      margin-bottom: 0;
-    }
-    .disclaimer, .contact {
-      font-size: 0.9em;
-      color: #555;
-      margin-top: 20px;
-    }
-    label {
-      display: block;
-      margin-top: 15px;
-    }
-    select, input[type="text"] {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
-    }
-    .search-button {
-      margin-top: 20px;
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .search-button:hover {
-      background: #0056b3;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GetComparley</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>GetComparley</h1>
-      <p><em>We Delete Buyer's Remorse</em></p>
-      <p><strong>Veteran-Owned Business</strong></p>
-    </header>
-
-    <form action="search.html" method="get">
-      <label for="query">What are you shopping for?</label>
-      <input type="text" id="query" name="query" placeholder="e.g. laptop, drill, coffee maker...">
-
-      <label for="retailers">Choose stores to compare:</label>
-      <select name="retailers" id="retailers" multiple>
-        <option value="amazon">Amazon</option>
-        <option value="walmart">Walmart</option>
-        <option value="target">Target</option>
-        <option value="lowes">Lowe's</option>
-        <option value="home-depot">Home Depot</option>
-        <option value="wayfair">Wayfair</option>
-        <option value="acer">Acer</option>
-        <option value="dell">Dell</option>
-        <option value="electronic-express">Electronic Express</option>
-      </select>
-
-      <button class="search-button" type="submit">Search</button>
-    </form>
-
-    <div class="disclaimer">
-      <p><strong>FTC Disclosure:</strong> We use affiliate links and may earn a commission when you make a purchase through links on our site—at no additional cost to you.</p>
+    <div class="container">
+        <img src="logo.png" alt="GetComparley Logo" class="logo">
+        <h1>GetComparley</h1>
+        <p class="tagline">We Delete Buyer's Remorse</p>
+        <p class="veteran">Veteran-Owned Business</p>
+        <form action="search.html" method="get">
+            <input type="text" name="query" placeholder="What are you shopping for?" required>
+            <select name="stores" multiple size="5">
+                <option value="amazon">Amazon</option>
+                <option value="walmart">Walmart</option>
+                <option value="target">Target</option>
+                <option value="lowes">Lowe's</option>
+                <option value="wayfair">Wayfair</option>
+            </select>
+            <br>
+            <button type="submit">Search</button>
+        </form>
+        <p class="disclosure">FTC Disclosure: We use affiliate links and may earn a commission when you make a purchase through links on our site — at no additional cost to you.</p>
+        <p>Contact: <a href="mailto:support@getcomparley.com">support@getcomparley.com</a></p>
     </div>
-
-    <footer class="contact">
-      <p>Contact: <a href="mailto:support@getcomparley.com">support@getcomparley.com</a></p>
-      <p>&copy; 2025 GetComparley. All rights reserved.</p>
-    </footer>
-  </div>
 </body>
 </html>
