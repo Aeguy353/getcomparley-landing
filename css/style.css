@@ -1,0 +1,29 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background: #1f2937;
+    color: white;
+    padding: 1em 0;
+}
+#logo {
+    height: 80px;
+    margin-bottom: 10px;
+}
+.search-section {
+    margin-top: 20px;
+}
+select {
+    margin: 0.5em;
+}
+footer {
+    margin-top: 40px;
+    background: #1f2937;
+    color: white;
+    padding: 1em 0;
+}
