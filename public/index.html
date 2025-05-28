@@ -3,27 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GetComparley</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>GetComparley – Deleting Buyer’s Remorse</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #f8fafc, #e2e8f0);
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <img src="logo.png" alt="GetComparley Logo" style="max-height: 60px;">
-    <h1>Welcome to GetComparley</h1>
-    <p>Veteran-owned. We earn from affiliate commissions. See our <a href="disclaimer.txt">disclaimer</a>.</p>
-  </header>
-  <main>
-    <form action="../public/results.html">
-      <label>Select Stores to Compare:</label><br>
-      <select name="stores" multiple>
+<body class="text-gray-800">
+  <div class="min-h-screen flex flex-col items-center justify-center px-4">
+    <img src="logo.png" alt="GetComparley Logo" class="h-20 mb-6 animate-bounce" />
+    <h1 class="text-4xl font-bold mb-2 text-center">Welcome to GetComparley</h1>
+    <p class="mb-6 text-lg text-center max-w-xl">
+      A veteran-owned smart product comparison engine that scans prices and features from top retailers to help you shop smarter.
+      <br><span class="italic text-sm">Deleting Buyer’s Remorse.</span>
+    </p>
+
+    <form action="results.html" class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md animate-fade-in">
+      <label for="stores" class="block mb-2 text-sm font-medium">Choose stores to compare:</label>
+      <select id="stores" name="stores" multiple class="w-full p-2 border border-gray-300 rounded mb-4">
         <option value="amazon">Amazon</option>
         <option value="walmart">Walmart</option>
         <option value="target">Target</option>
         <option value="lowes">Lowe's</option>
         <option value="home-depot">Home Depot</option>
-      </select><br><br>
-      <input type="submit" value="Search" />
+      </select>
+      <input type="text" name="query" placeholder="Search for a product..." class="w-full p-2 mb-4 border border-gray-300 rounded" />
+      <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white w-full p-2 rounded">Compare Now</button>
     </form>
-  </main>
+
+    <footer class="mt-8 text-center text-sm text-gray-600">
+      <p>Veteran-owned | Affiliate Commissions Apply</p>
+      <p><a href="disclaimer.txt" class="underline">FTC Disclosure</a></p>
+    </footer>
+  </div>
 </body>
 </html>
