@@ -2,34 +2,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GetComparley - Veteran Owned Product Comparison</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <title>GetComparley - Smart Product Search</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <img src="assets/logo.png" alt="Comparley Logo" id="logo">
-        <h1>Welcome to GetComparley</h1>
-        <p class="tagline">Deleting Buyer's Remorse</p>
-    </header>
-    <main>
-        <section class="search-section">
-            <p>Select up to 6 stores to compare or trust us to pick the best.</p>
-            <div id="store-selectors">
-                <select><option>Select Store</option></select>
-                <select><option>Select Store</option></select>
-                <select><option>Select Store</option></select>
-                <select><option>Select Store</option></select>
-                <select><option>Select Store</option></select>
-                <select><option>Select Store</option></select>
-            </div>
-            <button onclick="searchProducts()">Search</button>
-        </section>
-        <p class="disclaimer">This is a veteran-owned site. We may earn commissions through affiliate links. More stores are being added daily.</p>
-    </main>
-    <footer>
-        <p>&copy; 2025 GetComparley</p>
-    </footer>
-    <script src="js/script.js"></script>
+  <header>
+    <img src="assets/logo.png" alt="GetComparley Logo" />
+    <h1>Welcome to GetComparley</h1>
+    <p>Veteran-Owned • Deleting Buyer's Remorse</p>
+  </header>
+  <main>
+    <form id="searchForm">
+      <input type="text" id="query" placeholder="What are you shopping for?" />
+      <div class="dropdowns">
+        <select><option>Select Store</option></select>
+        <select><option>Select Store</option></select>
+        <select><option>Select Store</option></select>
+        <select><option>Select Store</option></select>
+        <select><option>Select Store</option></select>
+        <select><option>Select Store</option></select>
+      </div>
+      <button type="submit">Compare</button>
+    </form>
+    <div>
+      <button onclick="trustSite()">Trust GetComparley to choose stores</button>
+    </div>
+    <section id="categories">
+      <h2>Shop by Category</h2>
+      <ul>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Furniture</a></li>
+        <li><a href="#">Bed & Bath</a></li>
+        <li><a href="#">Toys</a></li>
+        <li><a href="#">Jewelry</a></li>
+        <li><a href="#">Sports</a></li>
+      </ul>
+    </section>
+    <p class="disclaimer">As an affiliate site, we may earn commissions on purchases made through our links. Prices and availability may change. More stores are being added daily.</p>
+  </main>
+  <footer>
+    <p>&copy; 2025 GetComparley</p>
+  </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>
