@@ -1,37 +1,29 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GetComparley</title>
-    <script>
-        function handleSearch(event) {
-            event.preventDefault();
-            const query = document.getElementById('searchInput').value;
-            window.location.href = `results.html?query=${encodeURIComponent(query)}`;
-        }
-    </script>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GetComparley</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-gray-100 text-gray-800 text-center font-sans">
-    <div class="max-w-3xl mx-auto p-6">
-        <img src="logo.png" alt="GetComparley Logo" class="h-24 mx-auto mb-4" />
-        <h1 class="text-3xl font-bold mb-2">Welcome to GetComparley</h1>
-        <p class="mb-4 text-lg">Veteran-Owned • Deleting Buyer's Remorse</p>
-        <p class="text-sm mb-6 text-gray-600">As an affiliate site, we may earn commissions on purchases made through our links. Prices and availability may change.</p>
-        <form onsubmit="handleSearch(event)" class="mb-6">
-            <input id="searchInput" type="text" placeholder="Search for a product..." class="p-2 border border-gray-300 rounded w-full mb-4" required/>
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-                <select class="p-2 border border-gray-300 rounded" required><option value="">Select Store</option></select>
-                <select class="p-2 border border-gray-300 rounded"><option value="">Select Store</option></select>
-                <select class="p-2 border border-gray-300 rounded"><option value="">Select Store</option></select>
-                <select class="p-2 border border-gray-300 rounded"><option value="">Select Store</option></select>
-                <select class="p-2 border border-gray-300 rounded"><option value="">Select Store</option></select>
-                <select class="p-2 border border-gray-300 rounded"><option value="">Select Store</option></select>
-            </div>
-            <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Compare</button>
-        </form>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="GetComparley Logo" class="logo" />
+    <h1>Welcome to GetComparley</h1>
+    <p class="tagline">Veteran-Owned • Deleting Buyer’s Remorse</p>
+    <p class="disclaimer">As an affiliate site, we may earn commissions on purchases made through our links. Prices and availability may change.</p>
+    <input type="text" placeholder="What are you shopping for?" />
+    <div class="store-selects">
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
+      <select><option>Select Store</option><option>Amazon</option><option>Walmart</option><option>Target</option></select>
     </div>
+    <label><input type="checkbox" /> Trust GetComparley to search all best-matched stores</label>
+    <button onclick="location.href='results.html'">Compare</button>
+    <p><a href="tools.html">Tools</a> | <a href="furniture.html">Furniture</a> | <a href="bedbath.html">Bed & Bath</a> | <a href="toys.html">Toys</a> | <a href="electronics.html">Electronics</a> | <a href="outdoor.html">Outdoor</a></p>
+  </div>
 </body>
 </html>
