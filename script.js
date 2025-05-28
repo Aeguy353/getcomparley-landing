@@ -1,1 +1,1 @@
-// JavaScript logic
+console.log('Site loaded');
