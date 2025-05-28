@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GetComparley</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GetComparley</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="GetComparley Logo" style="max-height: 60px;">
+    <h1>Welcome to GetComparley</h1>
+    <p>Veteran-owned. We earn from affiliate commissions. See our <a href="disclaimer.txt">disclaimer</a>.</p>
+  </header>
+  <main>
+    <form action="../public/results.html">
+      <label>Select Stores to Compare:</label><br>
+      <select name="stores" multiple>
+        <option value="amazon">Amazon</option>
+        <option value="walmart">Walmart</option>
+        <option value="target">Target</option>
+        <option value="lowes">Lowe's</option>
+        <option value="home-depot">Home Depot</option>
+      </select><br><br>
+      <input type="submit" value="Search" />
+    </form>
+  </main>
+</body>
 </html>
