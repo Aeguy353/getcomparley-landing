@@ -1,21 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>GetComparley - Smart Product Search</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GetComparley</title>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="GetComparley Logo" />
+    <img src="logo.png" alt="GetComparley Logo" id="logo" />
     <h1>Welcome to GetComparley</h1>
     <p>Veteran-Owned • Deleting Buyer's Remorse</p>
   </header>
   <main>
-    <form id="searchForm">
-      <input type="text" id="query" placeholder="What are you shopping for?" />
-      <div class="dropdowns">
+    <section class="search-box">
+      <input type="text" id="searchInput" placeholder="Search a product..." />
+      <div id="store-selects">
         <select><option>Select Store</option></select>
         <select><option>Select Store</option></select>
         <select><option>Select Store</option></select>
@@ -23,27 +23,25 @@
         <select><option>Select Store</option></select>
         <select><option>Select Store</option></select>
       </div>
-      <button type="submit">Compare</button>
-    </form>
-    <div>
-      <button onclick="trustSite()">Trust GetComparley to choose stores</button>
-    </div>
-    <section id="categories">
+      <button id="compareBtn">Compare</button>
+      <button id="trustBtn">Trust GetComparley to choose stores</button>
+    </section>
+    <section class="categories">
       <h2>Shop by Category</h2>
       <ul>
-        <li><a href="#">Tools</a></li>
-        <li><a href="#">Furniture</a></li>
-        <li><a href="#">Bed & Bath</a></li>
-        <li><a href="#">Toys</a></li>
-        <li><a href="#">Jewelry</a></li>
-        <li><a href="#">Sports</a></li>
+        <li><a href="categories/tools.html">Tools</a></li>
+        <li><a href="categories/furniture.html">Furniture</a></li>
+        <li><a href="categories/bedbath.html">Bed & Bath</a></li>
+        <li><a href="categories/toys.html">Toys</a></li>
+        <li><a href="categories/jewelry.html">Jewelry</a></li>
+        <li><a href="categories/sports.html">Sports</a></li>
       </ul>
     </section>
-    <p class="disclaimer">As an affiliate site, we may earn commissions on purchases made through our links. Prices and availability may change. More stores are being added daily.</p>
   </main>
   <footer>
+    <p>This is a veteran-owned site. We may earn commissions through affiliate links. More stores are being added daily.</p>
     <p>&copy; 2025 GetComparley</p>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
